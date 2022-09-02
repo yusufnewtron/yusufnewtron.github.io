@@ -166,7 +166,7 @@
 					</article>
 					
 					<article class="mb-3">
-						<img src="img/net.png" alt="net" title="ASP.NET Core">
+						<img src="img/nest.png" alt="net" title="NEST JS">
 						<div class="text">
 						</div>
 					</article>
@@ -226,6 +226,9 @@
 							<h4>Point of Sales</h4>
 							<!--<p>Digunakan untuk mengelola stok barang dan juga kasir, menggunakan database Mysql</p>-->
 							<p>Used to manage stock of goods and also cashier, using Mysql database</p>
+							<div class="footer" style="margin-top:105px;">
+								<button onclick="pos()">Demo</button>
+							</div>
 						</div>
 					</article>
 					
@@ -461,6 +464,10 @@ function sispak() {
 	window.open('https://newtron-sispak.herokuapp.com', '_blank');
 }
 
+function pos() {
+	window.open('https://newtron-sis.000webhostapp.com/', '_blank');
+}
+
 function send() {
 	var name = document.getElementById("name").value ;
 	var email = document.getElementById("email").value ;
@@ -468,7 +475,7 @@ function send() {
 	if(name=='' || msg==''){
 		alert('Name and Message is Empty..!');
 	} else {
-		window.open('https://wa.me/628976364783?text=Nama:'+name+'\n Email:'+email+'\n Message:'+msg, '_blank');
+		window.open('https://wa.me/628976364783?text=Nama:'+name+'%0A Email:'+email+'%0A Message:'+msg, '_blank');
 	}
 	
 }
